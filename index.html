@@ -24,12 +24,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="js/app.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body onscroll="myFunction()">
-    <div id="home" class="h-section ">
-      <div id="firstPage" class="text-center firstPage h-section">
+    <div id="home" class="">
+      <div id="firstPage" class="text-center firstPage">
         <div class="container-fluid" style="padding: 25%">
           <div class="flex typewriter">
             <div class="text css-typing">
@@ -48,26 +47,42 @@
         </div>
       </div>
     </div>
-    <div
-      id="nav"
-      class="w3-bar w3-padding w3-card navbar"
-      style="letter-spacing: 4px; background-color: white; z-index: 2"
-    >
-      <a href="#home" class="w3-bar-item w3-button">Janhvi Chitnis</a>
-      <div class="w3-right w3-hide-small">
-        <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#education" class="w3-bar-item w3-button">Education</a>
-        <a href="#experience" class="w3-bar-item w3-button">Experience</a>
-        <a href="#project" class="w3-bar-item w3-button">Projects</a>
-        <a href="#awards" class="w3-bar-item w3-button">Certifications</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <nav id="nav" class="navbar navbar-expand-md bg-light navbar-light sticky" style="letter-spacing: 4px; background-color: white; z-index: 2">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Janhvi Chitnis</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#awards">Certification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+   
     <div id="about" class="h-section ">
       <div style="padding: 100px">
-        <div class="container-fluid" style="padding: 125px">
+        <div class="container-fluid" style="padding: 2%">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-4 col-sm-12 col-lg-4">
               <div class="img-blur">
                 <img
                   class="img-fluid"
@@ -76,7 +91,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-8 col-sm-12 col-lg-8">
               <p class="lead text-center m-5">
                 Hi Everyone! My name is Janhvi Chitnis and I am a Computer
                 Science Graduate Student at University of North Carolina at
@@ -229,10 +244,21 @@
         <div class="row">
           <div class="col-md-4 flip-card">
             <div class="w3-white flip-card-inner">
-              <div class="flip-card-front">
-                <h5 style="padding-top: 25%"><b>Chat Room Messenger</b></h5>
+              <div class="flip-card-front p-2">
+                <h5>
+                  <b>Personal Budget Monitor</b>
+                </h5>
+                <p>
+                 This is Web-Application designed to monitor personal budget by adding daily expenses and viewing monthly expense report in the form of graphical representation.
+                 Its built with Angular, HTML, Bootstrap, NodeJS and Google Firebase Realtime Database.
+                </p>
               </div>
-              <div class="flip-card-back">
+            </div>
+          </div>
+          <div class="col-md-4 flip-card">    <!--class flip-card-->
+            <div class="w3-white flip-card-inner">
+              <div class="flip-card-front p-2">
+                <h5><b>Chat Room Messenger</b></h5>
                 <p>
                   Developed an android mobile application which allows user to
                   send text messages and voice messages, share images,
@@ -246,12 +272,10 @@
           </div>
           <div class="col-md-4 flip-card">
             <div class="w3-white flip-card-inner">
-              <div class="flip-card-front">
-                <h5 style="padding-top: 25%">
+              <div class="flip-card-front p-2">
+                <h5>
                   <b>Property Management System</b>
                 </h5>
-              </div>
-              <div class="flip-card-back">
                 <p>
                   Developed a property management website that allows users to
                   buy, sell, rent, and lease apartments and townhalls, creating
@@ -261,23 +285,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 flip-card">
-            <div class="w3-white flip-card-inner">
-              <div class="flip-card-front">
-                <h5 style="padding-top: 25%">
-                  <b>Constraint Satisfaction Problem Map Coloring</b>
-                </h5>
-              </div>
-              <div class="flip-card-back">
-                <p>
-                  Using Artificial Intelligence techniques, implemented the
-                  Depth First Search algorithm using backtracking in java to
-                  color the map of the United States and Australia to show
-                  political divisions using the four-color theorem.
-                </p>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -315,15 +323,15 @@
           <i
             class="fa fa-facebook-official w3-hover-opacity"
             style="font-size: 45px; padding: 5px"
-          ></i>
+          ><a href="http://www.facebook.com/janhvi.chitnis/"></a></i>
           <i
-            class="fa fa-instagram w3-hover-opacity"
+            class="fa fa-github w3-hover-opacity"
             style="font-size: 45px; padding: 5px"
-          ></i>
+          ><a href="https://github.com/Janhvi21"></a></i>
           <i
             class="fa fa-linkedin w3-hover-opacity"
             style="font-size: 45px; padding: 5px"
-          ></i>
+          ><a href="https://www.linkedin.com/in/janhvichitnis/"></a></i>
           <p></p>
         </div>
       </footer>
