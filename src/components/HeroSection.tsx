@@ -13,6 +13,28 @@ export default function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-6 text-center z-10">
         <div className="max-w-4xl mx-auto animate-fade-in">
+          {/* Profile Picture */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative group">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-primary p-1 shadow-glow hover:shadow-primary transition-all duration-300">
+                <div className="w-full h-full rounded-full bg-muted/20 border-2 border-primary/30 flex items-center justify-center overflow-hidden">
+                  {/* Placeholder - replace src with your actual image */}
+                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-purple/20 flex items-center justify-center text-4xl font-bold text-primary">
+                    JS
+                  </div>
+                  {/* Uncomment and replace with your image:
+                  <img 
+                    src="/path-to-your-image.jpg" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover"
+                  />
+                  */}
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+            </div>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Full Stack
