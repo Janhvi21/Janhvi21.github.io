@@ -16,10 +16,10 @@ export default function HeroSection() {
           {/* Profile Picture */}
           <div className="mb-8 flex justify-center">
             <div className="relative group">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-primary p-1 shadow-glow hover:shadow-primary transition-all duration-300">
+              <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-gradient-primary p-1 shadow-glow hover:shadow-primary transition-all duration-300">
                 <div className="w-full h-full rounded-full bg-muted/20 border-2 border-primary/30 flex items-center justify-center overflow-hidden">
                   {/* Placeholder - replace src with your actual image */}
-                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-purple/20 flex items-center justify-center text-4xl font-bold text-primary">
+                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-purple/20 flex items-center justify-center text-6xl font-bold text-primary">
                     JS
                   </div>
                   {/* Uncomment and replace with your image:
