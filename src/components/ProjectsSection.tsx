@@ -5,37 +5,17 @@ import { ExternalLink, Github } from 'lucide-react'
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-featured e-commerce solution with React, Node.js, and PostgreSQL. Includes user authentication, payment processing, and admin dashboard.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
-    github: 'https://github.com',
-    live: 'https://example.com'
+    title: 'Rocket Mortgage',
+    description: 'Built secure and scalable purchase/refinance platforms at Rocket Mortgage, ensuring seamless and reliable mortgage transactions. Launched an AI-driven chatbot that enhanced customer engagement and streamlined the digital mortgage experience.',
+    image: 'https://assets.trafficpointltd.com/app/uploads/2023/01/26093107/Rocket-Mortgage-1.jpg',
+    technologies: ['Angular', 'Node.js', 'NestJS', 'Redis', 'AWS', 'Playwright'],
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative project management tool built with Next.js and Firebase. Features real-time updates, team collaboration, and analytics.',
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop',
-    technologies: ['Next.js', 'Firebase', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com',
-    live: 'https://example.com'
+    title: 'Cognizant Technology Solutions',
+    description: 'Engineered robust financial applications for LPL Financials at Cognizant, enabling secure and efficient investment operations. Delivered digital solutions that improved advisor-client collaboration and elevated the overall wealth management experience.',
+    image: 'https://globalfintechseries.com/wp-content/uploads/Wealthbox-Introduces-Two-Way-Sync-Integration-with-LPL-Financials-ClientWorks-Platform.jpg',
+    technologies: ['HTML','CSS','AngularJS', 'SQL', 'JavaScript', 'C#','.NET'],
   },
-  {
-    title: 'Weather Dashboard',
-    description: 'Interactive weather application with data visualization and location-based forecasts. Built with React and integrated with multiple APIs.',
-    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop',
-    technologies: ['React', 'Chart.js', 'OpenWeather API', 'Geolocation'],
-    github: 'https://github.com',
-    live: 'https://example.com'
-  },
-  {
-    title: 'Social Media Analytics',
-    description: 'Comprehensive analytics dashboard for social media insights. Features data visualization, trend analysis, and automated reporting.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    technologies: ['Vue.js', 'D3.js', 'Python', 'MongoDB', 'Docker'],
-    github: 'https://github.com',
-    live: 'https://example.com'
-  }
 ]
 
 export default function ProjectsSection() {
@@ -45,11 +25,11 @@ export default function ProjectsSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Featured Projects
+              Work Experience
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A collection of projects that showcase my skills in full stack development, 
+            A collection of professional experience that showcase my skills in full stack development, 
             from concept to deployment.
           </p>
         </div>
@@ -90,30 +70,6 @@ export default function ProjectsSection() {
                       {tech}
                     </Badge>
                   ))}
-                </div>
-                
-                <div className="flex gap-3 pt-4">
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                    asChild
-                  >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button 
-                    size="sm"
-                    className="bg-gradient-primary hover:shadow-glow"
-                    asChild
-                  >
-                    <a href={project.live} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
                 </div>
               </CardContent>
             </Card>

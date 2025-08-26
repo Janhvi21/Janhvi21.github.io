@@ -5,14 +5,14 @@ const skillCategories = [
   {
     category: 'Frontend',
     skills: [
-      'React', 'Next.js', 'TypeScript', 'JavaScript', 'Vue.js', 
-      'HTML5', 'CSS3', 'Tailwind CSS', 'SASS', 'Three.js'
+      'Angular', 'AngularJS', 'React', 'JavaScript', 'Typescript', 
+      'HTML5', 'CSS', 'SCSS', 'Angular Material', 'Bootstrap'
     ]
   },
   {
     category: 'Backend', 
     skills: [
-      'Node.js', 'Python', 'Express.js', 'FastAPI', 'Django',
+      'Node.js', 'NestJS', 'Express.js', '.NET', 'Java', 'C#',
       'REST APIs', 'GraphQL', 'Microservices', 'WebSockets'
     ]
   },
@@ -20,14 +20,20 @@ const skillCategories = [
     category: 'Database',
     skills: [
       'PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'Firebase',
-      'Supabase', 'Prisma', 'Mongoose'
+      'AWS Dynamo',
+    ]
+  },
+   {
+    category: 'Testing & Monitoring',
+    skills: [
+      'Jest','Cypress','Playwright','Mocha','Protractor','Dynatrace','Splunk','Glassbox','Grafana',
     ]
   },
   {
     category: 'DevOps & Tools',
     skills: [
-      'Docker', 'AWS', 'Git', 'GitHub Actions', 'Vercel', 
-      'Netlify', 'Jest', 'Cypress', 'Webpack', 'Vite'
+      'Docker', 'AWS', 'Git', 'GitHub Actions', 'TeamCity','Octopus', 
+      'SonarQube', 'CircleCI'
     ]
   }
 ]
@@ -49,7 +55,7 @@ export default function SkillsSection() {
         </div>
         
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {skillCategories.map((category, index) => (
               <Card 
                 key={index} 

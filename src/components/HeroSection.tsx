@@ -10,7 +10,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="absolute inset-x-0 bottom-0 h-16 min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto animate-fade-in">
           {/* Left Content */}
@@ -49,7 +49,7 @@ export default function HeroSection() {
             
             <div className="flex justify-center lg:justify-start items-center space-x-6">
               <a 
-                href="https://github.com" 
+                href="https://github.com/Janhvi21" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-border hover:border-primary hover:shadow-glow transition-all duration-300 group"
@@ -57,7 +57,7 @@ export default function HeroSection() {
                 <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/janhvichitnis" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-border hover:border-primary hover:shadow-glow transition-all duration-300 group"
@@ -65,7 +65,7 @@ export default function HeroSection() {
                 <Linkedin className="w-6 h-6 text-muted-foreground group-hover:text-primary" />
               </a>
               <a 
-                href="mailto:hello@example.com"
+                href="mailto:janhvichitnis2@gmail.com"
                 className="p-3 rounded-full border border-border hover:border-primary hover:shadow-glow transition-all duration-300 group"
               >
                 <Mail className="w-6 h-6 text-muted-foreground group-hover:text-primary" />
@@ -79,16 +79,13 @@ export default function HeroSection() {
               <div className="w-80 h-96 md:w-96 md:h-[500px] rounded-2xl bg-gradient-primary p-1 shadow-glow hover:shadow-primary transition-all duration-300">
                 <div className="w-full h-full rounded-2xl bg-muted/20 border-2 border-primary/30 flex items-center justify-center overflow-hidden">
                   {/* Placeholder - replace src with your actual image */}
-                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-purple/20 flex items-center justify-center text-8xl font-bold text-primary">
-                    JS
-                  </div>
-                  {/* Uncomment and replace with your image:
+                  {
                   <img 
-                    src="/path-to-your-image.jpg" 
+                    src="src/assets/profile.jpg" 
                     alt="Profile" 
                     className="w-full h-full object-cover rounded-2xl"
                   />
-                  */}
+}
                 </div>
               </div>
               <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300" />

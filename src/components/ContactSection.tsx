@@ -4,25 +4,26 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Mail, MapPin, Phone, Github, Linkedin } from 'lucide-react'
+import AboutSection from './AboutSection';
 
 const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@example.com',
-    href: 'mailto:hello@example.com'
+    value: 'janhvichitnis2@gmail.com',
+    href: 'mailto:janhvichitnis2@gmail.com'
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567'
+    value: '+1 (704) 345-5527',
+    href: 'tel:+17043455527'
   },
   {
     icon: MapPin,
     label: 'Location',
-    value: 'San Francisco, CA',
-    href: '#'
+    value: 'Austin, Texas',
+    href: 'https://www.google.com/maps/place/Austin,+TX'
   }
 ]
 
@@ -30,12 +31,12 @@ const socialLinks = [
   {
     icon: Github,
     label: 'GitHub',
-    href: 'https://github.com'
+    href: 'https://github.com/Janhvi21'
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com'
+    href: 'https://linkedin.com/in/janhvichitnis'
   }
 ]
 
@@ -55,72 +56,7 @@ export default function ContactSection() {
           </p>
         </div>
         
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <Card className="bg-gradient-card border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold text-foreground">
-                Send Message
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="firstName">First Name</Label>
-                  <Input 
-                    id="firstName"
-                    placeholder="John"
-                    className="bg-background/50 border-border focus:border-primary"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="lastName">Last Name</Label>
-                  <Input 
-                    id="lastName"
-                    placeholder="Doe"
-                    className="bg-background/50 border-border focus:border-primary"
-                  />
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input 
-                  id="email"
-                  type="email"
-                  placeholder="john@example.com"
-                  className="bg-background/50 border-border focus:border-primary"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="subject">Subject</Label>
-                <Input 
-                  id="subject"
-                  placeholder="Project Discussion"
-                  className="bg-background/50 border-border focus:border-primary"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea 
-                  id="message"
-                  placeholder="Tell me about your project..."
-                  rows={5}
-                  className="bg-background/50 border-border focus:border-primary"
-                />
-              </div>
-              
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300"
-              >
-                Send Message
-              </Button>
-            </CardContent>
-          </Card>
-          
+        <div className="max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-8">
             <Card className="bg-gradient-card border-border/50 shadow-card">
@@ -134,8 +70,10 @@ export default function ContactSection() {
                   <a
                     key={index}
                     href={info.href}
+                     target='blank'
                     className={`flex items-center space-x-4 p-3 rounded-lg hover:bg-primary/5 transition-colors ${
                       info.href === '#' ? 'cursor-default' : 'hover:scale-105'
+                     
                     }`}
                   >
                     <div className="p-2 rounded-lg bg-primary/10">

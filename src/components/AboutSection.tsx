@@ -5,12 +5,12 @@ const features = [
   {
     icon: Globe,
     title: 'Frontend Development',
-    description: 'Building responsive and interactive user interfaces with React, Next.js, and modern CSS frameworks.'
+    description: 'Building responsive and interactive user interfaces with Angular, React, Next.js, and modern CSS frameworks.'
   },
   {
     icon: Database,
     title: 'Backend Development',
-    description: 'Designing robust APIs and server-side applications using Node.js, Python, and various databases.'
+    description: 'Designing robust APIs and server-side applications using Node.js, .NET, and various databases.'
   },
   {
     icon: Code,
