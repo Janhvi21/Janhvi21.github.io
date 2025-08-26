@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Portfolio Design System - Dark Theme */
+    --background: 220 26% 6%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 220 15% 92%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 220 15% 92%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 220 26% 6%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 220 26% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Portfolio Colors */
+    --cyan: 195 100% 50%;
+    --purple: 280 100% 70%;
+    --dark-blue: 220 26% 6%;
+    --navy: 220 30% 12%;
+    --slate: 220 15% 25%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--cyan)), hsl(var(--purple)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--dark-blue)), hsl(var(--navy)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--navy)));
+    
+    /* Shadows */
+    --shadow-primary: 0 20px 40px -10px hsl(var(--cyan) / 0.3);
+    --shadow-card: 0 10px 30px -5px hsl(220 26% 6% / 0.5);
+    --shadow-glow: 0 0 40px hsl(var(--cyan) / 0.4);
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 220 26% 6%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 195 100% 50%;
+  }
+
+  .dark {
+    /* Same as root for dark-first approach */
+    --background: 220 26% 6%;
+    --foreground: 220 15% 95%;
+    --card: 220 20% 8%;
+    --card-foreground: 220 15% 92%;
+    --popover: 220 20% 8%;
+    --popover-foreground: 220 15% 92%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 220 26% 6%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 220 15% 85%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 280 100% 70%;
+    --accent-foreground: 220 26% 6%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 195 100% 50%;
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 220 26% 6%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 195 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+}
