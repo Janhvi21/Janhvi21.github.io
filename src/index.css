@@ -130,3 +130,6 @@ All colors MUST be HSL.
     background: hsl(var(--primary));
   }
 }
+.top-30{
+  margin-top: 30rem;
+}

@@ -55,8 +55,8 @@ export default function Navigation() {
               </button>
             ))}
           </div>
-          <a href="src/assets/Janhvi_Chitnis.pdf" download="Janhvi's Resume" target='_blank'>
-            <Button variant="outline" className="hidden md:flex border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+          <a href="Janhvi_Chitnis.pdf" download="Janhvi's Resume" target='_blank'>
+            <Button variant="outline" className="md:flex border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               Resume
             </Button>
           </a>

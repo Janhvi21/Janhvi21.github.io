@@ -10,8 +10,8 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="home" className="absolute inset-x-0 bottom-0 h-16 min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto px-6 z-10">
+    <section id="home" className=" absolute inset-x-0 bottom-0 h-16 min-h-fit flex items-center justify-center relative overflow-hidden">
+      <div className="mt-[10rem] md:mt-[10rem] lg:mt-[12rem] container mx-auto px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto animate-fade-in">
           {/* Left Content */}
           <div className="text-center lg:text-left">
@@ -81,7 +81,7 @@ export default function HeroSection() {
                   {/* Placeholder - replace src with your actual image */}
                   {
                   <img 
-                    src="src/assets/profile.jpg" 
+                    src="profile.jpg" 
                     alt="Profile" 
                     className="w-full h-full object-cover rounded-2xl"
                   />
